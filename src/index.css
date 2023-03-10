@@ -1,16 +1,163 @@
-:root {
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans:wght@500;700&family=Poppins:wght@500;600&family=Ubuntu+Mono&display=swap');
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+:root {
+  --color-bg-sidebar: #fafbfd;
+  --color-logo-base: #090f31;
+  --color-logo-highlight: #f7542e;
+  --color-medium-gray: #9e9e9e;
+  --color-page-heading: #4f4f4f;
+  --color-text-byline: #a9a9a9;
+  --color-text-states: #828282;
+  --color-text: #333;
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --font-family-noto-sans: 'Noto Sans', sans-serif;
+  --font-family-poppins: 'Poppins', sans-serif;
+  --font-family-ubuntu-mono: 'Ubuntu Mono', monospace;
+  --font-size-text: 1rem;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
+
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
 }
 
-body {
-  margin: 0;
+.container {
+  column-gap: 0.53125rem;
+  display: grid;
+  grid-template-columns: 14.8125rem 1fr;
   min-height: 100vh;
 }
+
+.content {
+  display: grid;
+  grid-template-areas:
+    'main'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.main {
+  grid-area: main;
+  margin-block-start: 3.3125em;
+  margin-inline-start: 5.1875em;
+  min-height: 100%;
+  overflow: auto;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* #region Attribution */
+.attribution {
+  color: var(--color-text-byline);
+  font-family: var(--font-family-montserrat);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.0625rem;
+  margin: 4.69rem 0 0.5rem;
+  min-width: 100%;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--color-text-byline);
+  opacity: 1;
+  text-decoration: none;
+}
+
+.text-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.line-link {
+  text-decoration: underline !important;
+}
+/* #endregion */
+
+/* #region Sidebar */
+.sidebar {
+  background-color: var(--color-bg-sidebar);
+  padding-block-start: 3em;
+  padding-inline-start: 3.5em;
+
+  a.button {
+    text-decoration: none;
+  }
+
+  button.button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+
+    @media screen and (-ms-high-contrast: active) {
+      border: 2px solid currentcolor;
+    }
+  }
+}
+
+.nameplate {
+  color: var(--color-logo-base);
+  font-family: var(--font-family-poppins);
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: var(--font-weight-semi-bold);
+  line-height: 1.25;
+}
+
+.colored-nameplate {
+  color: var(--color-logo-highlight);
+}
+
+.nav-container {
+  font-family: var(--font-family-noto-sans);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+  padding-block-start: 7.625em;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-block-start: 2em;
+}
+
+.nav-item > .nav-link {
+  color: var(--color-medium-gray);
+  text-decoration: none;
+}
+
+.nav-active > .nav-link {
+  color: var(--color-logo-base);
+  font-weight: var(--font-weight-bold);
+}
+/* #endregion Sidebar */
+
+/* #region Content Area */
+.section-title {
+  color: var(--color-page-heading);
+  font-family: var(--font-family-poppins);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: var(--font-weight-medium);
+  line-height: 2.25rem;
+}
+/* #endregion Content Area */
