@@ -41,11 +41,11 @@ function App() {
                 <p className="element-heading">
                   &lt;Button variant="outline" /&gt;
                 </p>
-                <Button />
+                <Button variant="outline" />
               </div>
               <div className="example">
                 <p className="element-heading">&amp;:hover, &amp;:focus</p>
-                <Button />
+                <Button variant="outline" className="hover" />
               </div>
             </div>
             <div className="row">

@@ -12,10 +12,14 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 const Button = ({
   type = 'button',
   className,
+  variant,
   children,
   ...rest
 }: ButtonProps) => {
-  const buttonClass = classNames(styles.button, `${styles[`${className}`]}`)
+  const buttonClass = classNames(styles.button, {
+    [`${styles[`${variant}`]}`]: typeof variant !== 'undefined',
+    [`${styles[`${className}`]}`]: typeof className !== 'undefined',
+  })
   return (
     <button className={buttonClass} type={type} {...rest}>
       {children || `Default`}
