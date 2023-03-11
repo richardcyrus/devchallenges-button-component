@@ -94,4 +94,8 @@ button.button {
       box-shadow: 0 0 0 2px var(--color-btn-bg-primary);
     }
   }
+
+  &.no-shadow {
+    box-shadow: none !important;
+  }
 }

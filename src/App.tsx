@@ -65,7 +65,7 @@ function App() {
                 <p className="element-heading">
                   &lt;Button disableShadow /&gt;
                 </p>
-                <Button />
+                <Button disableShadow />
               </div>
             </div>
             <div className="row">
