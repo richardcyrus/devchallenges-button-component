@@ -50,6 +50,7 @@
   margin-inline-start: 5.1875em;
   min-height: 100%;
   overflow: auto;
+  padding-inline-start: 0.25em;
 }
 
 footer {
@@ -159,5 +160,40 @@ footer {
   font-style: normal;
   font-weight: var(--font-weight-medium);
   line-height: 2.25rem;
+}
+
+.examples {
+  margin-block-start: 1.75em;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(max-content, 1fr));
+}
+
+.row:nth-child(8) {
+  grid-template-columns: repeat(4, minmax(max-content, 1fr));
+}
+
+.row:not(:first-of-type) {
+  margin-block-start: 2.8125em;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+  .example:not(:first-child) {
+    margin-block-start: 2.8125em;
+  }
+}
+
+.element-heading {
+  color: var(--color-text);
+  font-family: var(--font-family-ubuntu-mono);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 0.75;
+  padding-block-end: 0.75em;
 }
 /* #endregion Content Area */

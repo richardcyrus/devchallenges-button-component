@@ -1,3 +1,5 @@
+import Button from './components/Button'
+
 function App() {
   return (
     <div className="container">
@@ -23,6 +25,140 @@ function App() {
       <section className="content">
         <div className="main">
           <h2 className="section-title">Buttons</h2>
+          <div className="examples">
+            <div className="row">
+              <div className="example">
+                <p className="element-heading">&lt;Button /&gt;</p>
+                <Button />
+              </div>
+              <div className="example">
+                <p className="element-heading">&amp;:hover, &amp;:focus</p>
+                <Button />
+              </div>
+            </div>
+            <div className="row">
+              <div className="example">
+                <p className="element-heading">
+                  &lt;Button variant="outline" /&gt;
+                </p>
+                <Button />
+              </div>
+              <div className="example">
+                <p className="element-heading">&amp;:hover, &amp;:focus</p>
+                <Button />
+              </div>
+            </div>
+            <div className="row">
+              <div className="example">
+                <p className="element-heading">
+                  &lt;Button variant="text" /&gt;
+                </p>
+                <Button />
+              </div>
+              <div className="example">
+                <p className="element-heading">&amp;:hover, &amp;:focus</p>
+                <Button />
+              </div>
+            </div>
+            <div className="row">
+              <div className="example">
+                <p className="element-heading">
+                  &lt;Button disableShadow /&gt;
+                </p>
+                <Button />
+              </div>
+            </div>
+            <div className="row">
+              <div className="example">
+                <p className="element-heading">&lt;Button disabled /&gt;</p>
+                <Button />
+              </div>
+              <div className="example">
+                <p className="element-heading">
+                  &lt;Button variant="text" disabled /&gt;
+                </p>
+                <Button />
+              </div>
+            </div>
+            <div className="row">
+              <div className="example">
+                <p className="element-heading">
+                  &lt;Button startIcon="local_grocery_store" /&gt;
+                </p>
+                <Button />
+              </div>
+              <div className="example">
+                <p className="element-heading">
+                  &lt;Button endIcon="local_grocery_store" /&gt;
+                </p>
+                <Button />
+              </div>
+            </div>
+            <div className="row">
+              <div className="example">
+                <p className="element-heading">&lt;Button size="sm" /&gt;</p>
+                <Button />
+              </div>
+              <div className="example">
+                <p className="element-heading">&lt;Button size="md" /&gt;</p>
+                <Button />
+              </div>
+              <div className="example">
+                <p className="element-heading">&lt;Button size="lg" /&gt;</p>
+                <Button />
+              </div>
+            </div>
+            <div className="row">
+              <div className="column">
+                <div className="example">
+                  <p className="element-heading">
+                    &lt;Button color="default" /&gt;
+                  </p>
+                  <Button />
+                </div>
+                <div className="example">
+                  <p className="element-heading">&amp;:hover, &amp;:focus</p>
+                  <Button />
+                </div>
+              </div>
+              <div className="column">
+                <div className="example">
+                  <p className="element-heading">
+                    &lt;Button color="primary" /&gt;
+                  </p>
+                  <Button />
+                </div>
+                <div className="example">
+                  <p className="element-heading">&amp;:hover, &amp;:focus</p>
+                  <Button />
+                </div>
+              </div>
+              <div className="column">
+                <div className="example">
+                  <p className="element-heading">
+                    &lt;Button color="secondary" /&gt;
+                  </p>
+                  <Button>Secondary</Button>
+                </div>
+                <div className="example">
+                  <p className="element-heading">&amp;:hover, &amp;:focus</p>
+                  <Button>Secondary</Button>
+                </div>
+              </div>
+              <div className="column">
+                <div className="example">
+                  <p className="element-heading">
+                    &lt;Button color="danger" /&gt;
+                  </p>
+                  <Button>Danger</Button>
+                </div>
+                <div className="example">
+                  <p className="element-heading">&amp;:hover, &amp;:focus</p>
+                  <Button>Danger</Button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <footer>
           <div className="attribution">
