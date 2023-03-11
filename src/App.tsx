@@ -97,15 +97,15 @@ function App() {
             <div className="row">
               <div className="example">
                 <p className="element-heading">&lt;Button size="sm" /&gt;</p>
-                <Button />
+                <Button size="sm" />
               </div>
               <div className="example">
                 <p className="element-heading">&lt;Button size="md" /&gt;</p>
-                <Button />
+                <Button size="md" />
               </div>
               <div className="example">
                 <p className="element-heading">&lt;Button size="lg" /&gt;</p>
-                <Button />
+                <Button size="lg" />
               </div>
             </div>
             <div className="row">

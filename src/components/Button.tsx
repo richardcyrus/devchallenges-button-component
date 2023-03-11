@@ -8,17 +8,20 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'outline' | 'text'
   children?: ReactNode
   disableShadow?: boolean
+  size?: 'sm' | 'md' | 'lg'
 }
 
 const Button = ({
-  type = 'button',
-  className,
-  variant,
-  disableShadow,
   children,
+  className,
+  disableShadow,
+  size,
+  type = 'button',
+  variant,
   ...rest
 }: ButtonProps) => {
   const buttonClass = classNames(styles.button, {
+    [`${styles[`${size}`]}`]: typeof size !== 'undefined',
     [`${styles[`${variant}`]}`]: typeof variant !== 'undefined',
     [`${styles['no-shadow']}`]:
       typeof disableShadow !== 'undefined' && disableShadow,
