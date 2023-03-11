@@ -114,11 +114,11 @@ function App() {
                   <p className="element-heading">
                     &lt;Button color="default" /&gt;
                   </p>
-                  <Button />
+                  <Button color="default" />
                 </div>
                 <div className="example">
                   <p className="element-heading">&amp;:hover, &amp;:focus</p>
-                  <Button />
+                  <Button color="default" className="hover" />
                 </div>
               </div>
               <div className="column">
@@ -126,11 +126,11 @@ function App() {
                   <p className="element-heading">
                     &lt;Button color="primary" /&gt;
                   </p>
-                  <Button />
+                  <Button color="primary" />
                 </div>
                 <div className="example">
                   <p className="element-heading">&amp;:hover, &amp;:focus</p>
-                  <Button />
+                  <Button color="primary" className="hover" />
                 </div>
               </div>
               <div className="column">
@@ -138,11 +138,13 @@ function App() {
                   <p className="element-heading">
                     &lt;Button color="secondary" /&gt;
                   </p>
-                  <Button>Secondary</Button>
+                  <Button color="secondary">Secondary</Button>
                 </div>
                 <div className="example">
                   <p className="element-heading">&amp;:hover, &amp;:focus</p>
-                  <Button>Secondary</Button>
+                  <Button color="secondary" className="hover">
+                    Secondary
+                  </Button>
                 </div>
               </div>
               <div className="column">
@@ -150,11 +152,13 @@ function App() {
                   <p className="element-heading">
                     &lt;Button color="danger" /&gt;
                   </p>
-                  <Button>Danger</Button>
+                  <Button color="danger">Danger</Button>
                 </div>
                 <div className="example">
                   <p className="element-heading">&amp;:hover, &amp;:focus</p>
-                  <Button>Danger</Button>
+                  <Button color="danger" className="hover">
+                    Danger
+                  </Button>
                 </div>
               </div>
             </div>
