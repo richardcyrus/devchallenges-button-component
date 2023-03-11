@@ -71,13 +71,13 @@ function App() {
             <div className="row">
               <div className="example">
                 <p className="element-heading">&lt;Button disabled /&gt;</p>
-                <Button />
+                <Button disabled />
               </div>
               <div className="example">
                 <p className="element-heading">
                   &lt;Button variant="text" disabled /&gt;
                 </p>
-                <Button />
+                <Button variant="text" disabled />
               </div>
             </div>
             <div className="row">

@@ -30,6 +30,7 @@ button.button {
   --color-btn-primary-shadow: rgb(41 98 255 / 20%);
   --color-btn-secondary-shadow: rgb(69 90 100 / 20%);
   --color-btn-default-text: #3f3f3f;
+  --color-medium-gray: #9e9e9e;
 
   align-items: center;
   background-color: var(--color-btn-bg-default);
@@ -58,6 +59,11 @@ button.button {
   &:focus-visible {
     box-shadow: 0 0 0 2px var(--color-btn-default-text);
     outline: transparent solid;
+  }
+
+  &:disabled {
+    background-color: var(--color-btn-bg-default);
+    color: var(--color-medium-gray);
   }
 
   &.outline {
@@ -92,6 +98,11 @@ button.button {
 
     &:focus-visible {
       box-shadow: 0 0 0 2px var(--color-btn-bg-primary);
+    }
+
+    &:disabled {
+      background-color: transparent;
+      color: var(--color-medium-gray);
     }
   }
 
