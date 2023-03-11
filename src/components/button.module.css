@@ -76,4 +76,22 @@ button.button {
       box-shadow: 0 0 0 4px var(--color-btn-bg-primary);
     }
   }
+
+  &.text {
+    background-color: transparent;
+    border: 1px solid transparent;
+    box-shadow: none;
+    color: var(--color-btn-bg-primary);
+
+    &.hover,
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--color-btn-bg-outline-hover);
+    }
+
+    &:focus-visible {
+      box-shadow: 0 0 0 4px var(--color-btn-bg-primary);
+    }
+  }
 }

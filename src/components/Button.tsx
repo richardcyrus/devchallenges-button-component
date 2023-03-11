@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import styles from './button.module.css'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: string
+  variant?: 'outline' | 'text'
   children?: ReactNode
 }
 
