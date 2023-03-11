@@ -39,33 +39,33 @@ function App() {
             <div className="row">
               <div className="example">
                 <p className="element-heading">
-                  &lt;Button variant="outline" /&gt;
+                  &lt;Button variant="outline" color="primary" /&gt;
                 </p>
-                <Button variant="outline" />
+                <Button variant="outline" color="primary" />
               </div>
               <div className="example">
                 <p className="element-heading">&amp;:hover, &amp;:focus</p>
-                <Button variant="outline" className="hover" />
+                <Button variant="outline" color="primary" className="hover" />
               </div>
             </div>
             <div className="row">
               <div className="example">
                 <p className="element-heading">
-                  &lt;Button variant="text" /&gt;
+                  &lt;Button variant="text" color="primary" /&gt;
                 </p>
-                <Button variant="text" />
+                <Button variant="text" color="primary" />
               </div>
               <div className="example">
                 <p className="element-heading">&amp;:hover, &amp;:focus</p>
-                <Button variant="text" className="hover" />
+                <Button variant="text" color="primary" className="hover" />
               </div>
             </div>
             <div className="row">
               <div className="example">
                 <p className="element-heading">
-                  &lt;Button disableShadow /&gt;
+                  &lt;Button disableShadow color="primary" /&gt;
                 </p>
-                <Button disableShadow />
+                <Button disableShadow color="primary" />
               </div>
             </div>
             <div className="row">
@@ -96,16 +96,22 @@ function App() {
             </div>
             <div className="row">
               <div className="example">
-                <p className="element-heading">&lt;Button size="sm" /&gt;</p>
-                <Button size="sm" />
+                <p className="element-heading">
+                  &lt;Button size="sm" color="primary" /&gt;
+                </p>
+                <Button size="sm" color="primary" />
               </div>
               <div className="example">
-                <p className="element-heading">&lt;Button size="md" /&gt;</p>
-                <Button size="md" />
+                <p className="element-heading">
+                  &lt;Button size="md" color="primary" /&gt;
+                </p>
+                <Button size="md" color="primary" />
               </div>
               <div className="example">
-                <p className="element-heading">&lt;Button size="lg" /&gt;</p>
-                <Button size="lg" />
+                <p className="element-heading">
+                  &lt;Button size="lg" color="primary" /&gt;
+                </p>
+                <Button size="lg" color="primary" />
               </div>
             </div>
             <div className="row">
