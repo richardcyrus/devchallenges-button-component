@@ -48,6 +48,7 @@ button.button {
   text-align: center;
   transition: 220ms all ease-in-out;
 
+  &.hover,
   &:hover,
   &:focus,
   &:active {

@@ -33,7 +33,7 @@ function App() {
               </div>
               <div className="example">
                 <p className="element-heading">&amp;:hover, &amp;:focus</p>
-                <Button />
+                <Button className="hover" />
               </div>
             </div>
             <div className="row">
