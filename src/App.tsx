@@ -83,15 +83,15 @@ function App() {
             <div className="row">
               <div className="example">
                 <p className="element-heading">
-                  &lt;Button startIcon="local_grocery_store" /&gt;
+                  &lt;Button startIcon="add_shopping_cart" color="primary" /&gt;
                 </p>
-                <Button />
+                <Button color="primary" startIcon="add_shopping_cart" />
               </div>
               <div className="example">
                 <p className="element-heading">
-                  &lt;Button endIcon="local_grocery_store" /&gt;
+                  &lt;Button endIcon="add_shopping_cart" color="primary" /&gt;
                 </p>
-                <Button />
+                <Button color="primary" endIcon="add_shopping_cart" />
               </div>
             </div>
             <div className="row">
