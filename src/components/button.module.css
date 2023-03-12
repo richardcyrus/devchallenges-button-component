@@ -1,3 +1,5 @@
+@import url('material-icons/iconfont/outlined.css');
+
 a.button {
   text-decoration: none;
 }
@@ -158,5 +160,18 @@ button.button {
 
   &.no-shadow {
     box-shadow: none !important;
+  }
+
+  &.start-icon > .material-icons-outlined,
+  &.end-icon > .material-icons-outlined {
+    font-size: 0.875rem;
+  }
+
+  &.start-icon > .material-icons-outlined {
+    padding-inline-end: 0.625em;
+  }
+
+  &.end-icon > .material-icons-outlined {
+    padding-inline-start: 0.625em;
   }
 }
