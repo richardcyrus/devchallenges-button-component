@@ -171,7 +171,7 @@ footer {
   grid-template-columns: repeat(3, minmax(max-content, 1fr));
 }
 
-.row:nth-child(8) {
+.row:last-child {
   grid-template-columns: repeat(4, minmax(max-content, 1fr));
 }
 
