@@ -97,6 +97,40 @@ function App() {
             <div className="row">
               <div className="example">
                 <p className="element-heading">
+                  &lt;Button startIcon="home" /&gt;
+                </p>
+                <Button startIcon="home">Home</Button>
+              </div>
+              <div className="example">
+                <p className="element-heading">
+                  &lt;Button endIcon="shopping_cart" color="secondary" /&gt;
+                </p>
+                <Button color="secondary" endIcon="shopping_cart">
+                  Cart
+                </Button>
+              </div>
+            </div>
+            <div className="row">
+              <div className="example">
+                <p className="element-heading">
+                  &lt;Button startIcon="logout" color="danger" /&gt;
+                </p>
+                <Button color="danger" startIcon="logout">
+                  Logout
+                </Button>
+              </div>
+              <div className="example">
+                <p className="element-heading">
+                  &lt;Button startIcon="print" color="primary" /&gt;
+                </p>
+                <Button color="primary" startIcon="print">
+                  Print
+                </Button>
+              </div>
+            </div>
+            <div className="row">
+              <div className="example">
+                <p className="element-heading">
                   &lt;Button size="sm" color="primary" /&gt;
                 </p>
                 <Button size="sm" color="primary" />

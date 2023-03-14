@@ -6,6 +6,14 @@
 
 <div align="center">
   <h3>
+    <a href="https://devchallenges-button-component-seven.vercel.app/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/solutions/TzBROibHyIt1nEkGIBdL">
+      Solution
+    </a>
+    <span> | </span>
     <a href="https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY">
       Challenge
     </a>
