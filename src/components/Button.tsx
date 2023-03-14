@@ -4,14 +4,17 @@ import classNames from 'classnames'
 
 import styles from './button.module.css'
 
+export type ButtonColor = 'default' | 'primary' | 'secondary' | 'danger'
+export type ButtonSize = 'sm' | 'md' | 'lg'
+export type ButtonVariant = 'default' | 'outline' | 'text'
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode
-  color?: 'default' | 'primary' | 'secondary' | 'danger'
+  color?: ButtonColor
   disableShadow?: boolean
   endIcon?: string
-  size?: 'sm' | 'md' | 'lg'
+  size?: ButtonSize
   startIcon?: string
-  variant?: 'outline' | 'text'
+  variant?: ButtonVariant
 }
 
 const Button = ({
@@ -23,7 +26,7 @@ const Button = ({
   size,
   startIcon,
   type = 'button',
-  variant,
+  variant = 'default',
   ...rest
 }: ButtonProps) => {
   const buttonClass = classNames(styles.button, {
@@ -40,11 +43,21 @@ const Button = ({
   return (
     <button className={buttonClass} type={type} {...rest}>
       {typeof startIcon !== 'undefined' ? (
-        <span className={styles['material-icons-outlined']}>{startIcon}</span>
+        <span
+          data-testid="startIcon"
+          className={styles['material-icons-outlined']}
+        >
+          {startIcon}
+        </span>
       ) : null}
       {children || `Default`}
       {typeof endIcon !== 'undefined' ? (
-        <span className={styles['material-icons-outlined']}>{endIcon}</span>
+        <span
+          data-testid="endIcon"
+          className={styles['material-icons-outlined']}
+        >
+          {endIcon}
+        </span>
       ) : null}
     </button>
   )

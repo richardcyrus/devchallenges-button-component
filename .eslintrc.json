@@ -24,6 +24,15 @@
     "browser": true,
     "es2022": true
   },
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:jest-dom/recommended", "plugin:testing-library/react"]
+    }
+  ],
   "rules": {
     "import/first": "error",
     "import/newline-after-import": "error",
