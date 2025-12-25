@@ -1,19 +1,20 @@
 import { render, screen } from '@testing-library/react'
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 
-import type { ButtonSize, ButtonColor, ButtonVariant } from './Button'
+import type { ButtonColor, ButtonSize, ButtonVariant } from './Button'
 
 import Button from './Button'
 
 describe('Button variants', () => {
-  it.each(['default', 'outline', 'text'])(
-    'should have a %s variant',
-    (variant) => {
-      render(<Button variant={variant as ButtonVariant} />)
-      const variantButton = screen.getByRole('button', { name: /default/i })
-      expect(variantButton).toHaveClass(variant)
-    }
-  )
+  it.each([
+    'default',
+    'outline',
+    'text',
+  ])('should have a %s variant', (variant) => {
+    render(<Button variant={variant as ButtonVariant} />)
+    const variantButton = screen.getByRole('button', { name: /default/i })
+    expect(variantButton).toHaveClass(variant)
+  })
 })
 
 describe('Button without a shadow', () => {
@@ -41,20 +42,20 @@ describe('Button sizes', () => {
 })
 
 describe('Button colors', () => {
-  it.each(['default', 'primary', 'secondary', 'danger'])(
-    'should render with color: %s',
-    (color) => {
-      render(
-        <Button color={color as ButtonColor}>
-          {color.toLocaleUpperCase()}
-        </Button>
-      )
-      const colorButton = screen.getByRole('button', {
-        name: color.toLocaleUpperCase(),
-      })
-      expect(colorButton).toHaveClass(color)
-    }
-  )
+  it.each([
+    'default',
+    'primary',
+    'secondary',
+    'danger',
+  ])('should render with color: %s', (color) => {
+    render(
+      <Button color={color as ButtonColor}>{color.toLocaleUpperCase()}</Button>
+    )
+    const colorButton = screen.getByRole('button', {
+      name: color.toLocaleUpperCase(),
+    })
+    expect(colorButton).toHaveClass(color)
+  })
 })
 
 describe('Button with standard attributes', () => {

@@ -2,22 +2,24 @@
 /// <reference types="vite-plugin-svgr/client" />
 /// <reference types="vite/client" />
 
-import react from '@vitejs/plugin-react'
+import viteReact from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 import svgr from 'vite-plugin-svgr'
-import tsconfigPaths from 'vite-tsconfig-paths'
+import viteTsConfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(),
+    viteReact(),
     svgr({
       svgrOptions: {
         typescript: true,
         prettier: true,
       },
     }),
-    tsconfigPaths(),
+    viteTsConfigPaths({
+      projects: ['./tsconfig.json'],
+    }),
   ],
   test: {
     globals: true,

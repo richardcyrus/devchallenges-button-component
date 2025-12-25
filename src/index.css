@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans:wght@500;700&family=Poppins:wght@500;600&family=Ubuntu+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans:wght@500;700&family=Poppins:wght@500;600&family=Ubuntu+Mono&display=swap");
 
 :root {
   --color-bg-sidebar: #fafbfd;
@@ -9,10 +9,10 @@
   --color-text-byline: #a9a9a9;
   --color-text-states: #828282;
   --color-text: #333;
-  --font-family-montserrat: 'Montserrat', sans-serif;
-  --font-family-noto-sans: 'Noto Sans', sans-serif;
-  --font-family-poppins: 'Poppins', sans-serif;
-  --font-family-ubuntu-mono: 'Ubuntu Mono', monospace;
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-family-noto-sans: "Noto Sans", sans-serif;
+  --font-family-poppins: "Poppins", sans-serif;
+  --font-family-ubuntu-mono: "Ubuntu Mono", monospace;
   --font-size-text: 1rem;
   --font-weight-bold: 700;
   --font-weight-medium: 500;
@@ -38,8 +38,8 @@
 .content {
   display: grid;
   grid-template-areas:
-    'main'
-    'footer';
+    "main"
+    "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
 }
